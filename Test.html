@@ -1,7 +1,21 @@
-
-<img src="captcha_code_file.php?rand=<?php echo rand(); ?>" 
-id="captchaimg" >
-<label for="message">Enter the code above here :</label>
-<input id="6_letters_code" name="6_letters_code" type="text">
-
-<input type="submit" value="Submit" name="submit">
+<div class="container">
+    <h2>Captcha Generator</h2>
+    <form action="#">
+      <input
+        type="text"
+        placeholder=" a b c e d 0"
+        disabled
+        class="input-field disable"
+      />
+      <button type="button" class="btn-icon">
+        <i class="fa fa-refresh"></i>
+      </button>
+      <input
+        type="text"
+        placeholder="Enter Your Captcha"
+        class="input-field captcha"
+      />
+      <p class="message">Please Enter Your Captcha</p>
+      <button type="button" class="btn-submit">Submit Captcha</button>
+    </form>
+  </div>
